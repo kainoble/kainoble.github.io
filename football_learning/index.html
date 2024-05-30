@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning about Football</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .quiz {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .quiz h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .quiz form {
+            margin-bottom: 10px;
+        }
+
+        .quiz label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quiz input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .interactive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .interactive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Learning</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Football Positions and Tactics</h2>
+            <p>Explore detailed information about football positions, tactics, and formations <a href="positions_tactics.html">here</a>.</p>
+        </section>
+        <section>
+            <h2>Football Skills and Techniques</h2>
+            <p>Learn about essential football skills and techniques <a href="skills_techniques.html">here</a>.</p>
+        </section>
+        <section>
+            <h2>Football Fitness Training</h2>
+            <p>Understand the importance of fitness training in football <a href="fitness_training.html">here</a>.</p>
+        </section>
+        <section class="quiz">
+            <h2>Football Quiz</h2>
+            <form action="#" method="post">
+                <p><strong>Question 1:</strong> Who won the FIFA World Cup in 2018?</p>
+                <label><input type="radio" name="q1" value="a"> France</label>
+                <label><input type="radio" name="q1" value="b"> Brazil</label>
+                <label><input type="radio" name="q1" value="c"> Germany</label>
+                <label><input type="radio" name="q1" value="d"> Argentina</label>
+
+                <p><strong>Question 2:</strong> Which player has won the most Ballon d'Or awards?</p>
+                <label><input type="radio" name="q2" value="a"> Cristiano Ronaldo</label>
+                <label><input type="radio" name="q2" value="b"> Lionel Messi</label>
+                <label><input type="radio" name="q2" value="c"> Diego Maradona</label>
+                <label><input type="radio" name="q2" value="d"> Zinedine Zidane</label>
+
+                <button type="submit">Submit Answers</button>
+            </form>
+        </section>
+        <section class="interactive-video">
+            <h2>Interactive Football Tutorial</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interactive Learning about Football</p>
+    </footer>
+</body>
+</html>
